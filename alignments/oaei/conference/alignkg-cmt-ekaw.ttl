@@ -1,0 +1,32 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cmt#Conference> owl:equivalentClass <http://ekaw#Conference> .
+
+<http://cmt#ConferenceChair> owl:equivalentClass <http://ekaw#Conference> .
+
+<http://cmt#ConferenceMember> owl:equivalentClass <http://ekaw#Conference> .
+
+<http://cmt#Document> owl:equivalentClass <http://ekaw#Document> .
+
+<http://cmt#Paper> owl:equivalentClass <http://ekaw#Paper> .
+
+<http://cmt#PaperAbstract> owl:equivalentClass <http://ekaw#Paper_Author> .
+
+<http://cmt#Person> owl:equivalentClass <http://ekaw#Person> .
+
+<http://cmt#Review> owl:equivalentClass <http://ekaw#Review> .
+
+<http://cmt#assignReviewer> owl:equivalentProperty <http://ekaw#hasReviewer> .
+
+<http://cmt#hasAuthor> owl:equivalentProperty <http://ekaw#authorOf> .
+
+<http://cmt#paperAssignmentToolsRunBy> owl:equivalentProperty <http://ekaw#paperInVolume> .
+
+<http://cmt#paperID> owl:equivalentProperty <http://ekaw#paperInVolume> .
+
+<http://cmt#reviewCriteriaEnteredBy> owl:equivalentProperty <http://ekaw#reviewWrittenBy> .
+
+<http://cmt#reviewsPerPaper> owl:equivalentProperty <http://ekaw#reviewerOfPaper> .
+
+<http://cmt#writtenBy> owl:equivalentProperty <http://ekaw#writtenBy> .
+

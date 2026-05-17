@@ -1,0 +1,74 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://conference#Call_for_paper> owl:equivalentClass <http://edas#CallForPapers> .
+
+<http://conference#Call_for_participation> owl:equivalentClass <http://edas#CallForPapers> .
+
+<http://conference#Co-chair> owl:equivalentClass <http://edas#ConferenceChair> .
+
+<http://conference#Conference> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_announcement> owl:equivalentClass <http://edas#ConferenceEvent> .
+
+<http://conference#Conference_applicant> owl:equivalentClass <http://edas#ConferenceChair> .
+
+<http://conference#Conference_contribution> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_contributor> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_document> owl:equivalentClass <http://edas#ConferenceEvent> .
+
+<http://conference#Conference_fees> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_part> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_participant> owl:equivalentClass <http://edas#ConferenceChair> .
+
+<http://conference#Conference_proceedings> owl:equivalentClass <http://edas#ConferenceSession> .
+
+<http://conference#Conference_volume> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Conference_www> owl:equivalentClass <http://edas#Conference> .
+
+<http://conference#Organization> owl:equivalentClass <http://edas#Organization> .
+
+<http://conference#Paper> owl:equivalentClass <http://edas#Paper> .
+
+<http://conference#Person> owl:equivalentClass <http://edas#Person> .
+
+<http://conference#Presentation> owl:equivalentClass <http://edas#PaperPresentation> .
+
+<http://conference#Review> owl:equivalentClass <http://edas#Review> .
+
+<http://conference#Review_expertise> owl:equivalentClass <http://edas#ReviewRating> .
+
+<http://conference#Review_preference> owl:equivalentClass <http://edas#Review> .
+
+<http://conference#Reviewer> owl:equivalentClass <http://edas#Reviewer> .
+
+<http://conference#Topic> owl:equivalentClass <http://edas#Topic> .
+
+<http://conference#Workshop> owl:equivalentClass <http://edas#Workshop> .
+
+<http://conference#belongs_to_a_review_reference> owl:equivalentProperty <http://edas#belongsToEvent> .
+
+<http://conference#belongs_to_reviewers> owl:equivalentProperty <http://edas#belongsToEvent> .
+
+<http://conference#has_a_date_of_issue> owl:equivalentProperty <http://edas#hasStartDateTime> .
+
+<http://conference#has_a_location> owl:equivalentProperty <http://edas#isLocationOf> .
+
+<http://conference#has_a_name> owl:equivalentProperty <http://edas#hasName> .
+
+<http://conference#has_a_review> owl:equivalentProperty <http://edas#hasReviewHistory> .
+
+<http://conference#has_a_topic_or_a_submission_contribution> owl:equivalentProperty <http://edas#hasSubmissionInstructions> .
+
+<http://conference#has_an_email> owl:equivalentProperty <http://edas#hasEmail> .
+
+<http://conference#has_the_first_name> owl:equivalentProperty <http://edas#hasFirstName> .
+
+<http://conference#has_the_last_name> owl:equivalentProperty <http://edas#hasLastName> .
+
+<http://conference#is_a_starting_date> owl:equivalentProperty <http://edas#startDate> .
+

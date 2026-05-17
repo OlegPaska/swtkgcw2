@@ -1,0 +1,78 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://iasted#Author> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://iasted#Conference_Hiker> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_activity> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_airport> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_building> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_city> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_days> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_hall> owl:equivalentClass <http://sigkdd#Conference_hall> .
+
+<http://iasted#Conference_hotel> owl:equivalentClass <http://sigkdd#Conference_hall> .
+
+<http://iasted#Conference_restaurant> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Conference_state> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://iasted#Deadline> owl:equivalentClass <http://sigkdd#Deadline> .
+
+<http://iasted#Deadline_for_notification_of_acceptance> owl:equivalentClass <http://sigkdd#Deadline_Author_notification> .
+
+<http://iasted#Deadline_hotel_reservation> owl:equivalentClass <http://sigkdd#Deadline> .
+
+<http://iasted#Document> owl:equivalentClass <http://sigkdd#Document> .
+
+<http://iasted#Fee> owl:equivalentClass <http://sigkdd#Fee> .
+
+<http://iasted#Hotel_fee> owl:equivalentClass <http://sigkdd#Hotel> .
+
+<http://iasted#Hotel_presenter> owl:equivalentClass <http://sigkdd#Hotel> .
+
+<http://iasted#Hotel_room> owl:equivalentClass <http://sigkdd#Hotel> .
+
+<http://iasted#Listener> owl:equivalentClass <http://sigkdd#Listener> .
+
+<http://iasted#Main_office> owl:equivalentClass <http://sigkdd#Main_office> .
+
+<http://iasted#Memeber_registration_fee> owl:equivalentClass <http://sigkdd#Registration_fee> .
+
+<http://iasted#Non_speaker> owl:equivalentClass <http://sigkdd#Speaker> .
+
+<http://iasted#Nonauthor_registration_fee> owl:equivalentClass <http://sigkdd#Registration_fee> .
+
+<http://iasted#Nonmember_registration_fee> owl:equivalentClass <http://sigkdd#Registration_Non-Member> .
+
+<http://iasted#Person> owl:equivalentClass <http://sigkdd#Person> .
+
+<http://iasted#Place> owl:equivalentClass <http://sigkdd#Place> .
+
+<http://iasted#Registration> owl:equivalentClass <http://sigkdd#Registration_fee> .
+
+<http://iasted#Registration_fee> owl:equivalentClass <http://sigkdd#Registration_fee> .
+
+<http://iasted#Registration_form> owl:equivalentClass <http://sigkdd#Registration_fee> .
+
+<http://iasted#Review> owl:equivalentClass <http://sigkdd#Review> .
+
+<http://iasted#Speaker> owl:equivalentClass <http://sigkdd#Speaker> .
+
+<http://iasted#Speaker_lecture> owl:equivalentClass <http://sigkdd#Speaker> .
+
+<http://iasted#Student_registration_fee> owl:equivalentClass <http://sigkdd#Registration_Student> .
+
+<http://iasted#Submissions_deadline> owl:equivalentClass <http://sigkdd#Deadline_Paper_Submission> .
+
+<http://iasted#is_designed_for> owl:equivalentProperty <http://sigkdd#designed_by> .
+
+<http://iasted#obtain> owl:equivalentProperty <http://sigkdd#obtain> .
+
+<http://iasted#pay> owl:equivalentProperty <http://sigkdd#pay> .
+

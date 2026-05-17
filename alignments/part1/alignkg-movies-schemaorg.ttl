@@ -1,0 +1,25 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Action> owl:equivalentClass schema:Action .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/City> owl:equivalentClass schema:City .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Country> owl:equivalentClass schema:Country .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/FromLocation> owl:equivalentProperty schema:fromLocation .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasActor> owl:equivalentProperty schema:actor .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasDirector> owl:equivalentProperty schema:director .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasGenre> owl:equivalentProperty schema:genre .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Movie> owl:equivalentClass schema:Movie .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Person> owl:equivalentClass schema:Person .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/name> owl:equivalentProperty schema:name .
+
+<http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/runtime> owl:equivalentProperty schema:runtime .
+

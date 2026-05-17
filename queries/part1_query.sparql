@@ -1,0 +1,20 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?localClass ?externalClass ?localProperty ?externalProperty ?domain ?range
+WHERE {
+  ?localClass rdf:type owl:Class .
+  ?localClass owl:equivalentClass ?externalClass .
+
+  ?localProperty owl:equivalentProperty ?externalProperty .
+  ?localProperty rdfs:domain ?domain .
+  ?localProperty rdfs:range ?range .
+
+  FILTER(?domain = ?localClass)
+  FILTER(STRSTARTS(STR(?localClass), "http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/"))
+  FILTER(STRSTARTS(STR(?localProperty), "http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/"))
+  FILTER(STRSTARTS(STR(?externalClass), "https://schema.org/"))
+  FILTER(STRSTARTS(STR(?externalProperty), "https://schema.org/"))
+}
+ORDER BY ?localClass ?localProperty

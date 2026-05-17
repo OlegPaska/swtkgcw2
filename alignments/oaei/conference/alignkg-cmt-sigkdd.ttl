@@ -1,0 +1,38 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://cmt#Author> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://cmt#AuthorNotReviewer> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://cmt#Co-author> owl:equivalentClass <http://sigkdd#Author> .
+
+<http://cmt#Conference> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://cmt#ConferenceChair> owl:equivalentClass <http://sigkdd#Conference_hall> .
+
+<http://cmt#ConferenceMember> owl:equivalentClass <http://sigkdd#Conference> .
+
+<http://cmt#Document> owl:equivalentClass <http://sigkdd#Document> .
+
+<http://cmt#Paper> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://cmt#PaperAbstract> owl:equivalentClass <http://sigkdd#Paper> .
+
+<http://cmt#Person> owl:equivalentClass <http://sigkdd#Person> .
+
+<http://cmt#ProgramCommittee> owl:equivalentClass <http://sigkdd#Program_Committee> .
+
+<http://cmt#ProgramCommitteeChair> owl:equivalentClass <http://sigkdd#Program_Committee> .
+
+<http://cmt#ProgramCommitteeMember> owl:equivalentClass <http://sigkdd#Program_Committee_member> .
+
+<http://cmt#Review> owl:equivalentClass <http://sigkdd#Review> .
+
+<http://cmt#date> owl:equivalentProperty <http://sigkdd#Date> .
+
+<http://cmt#memberOfConference> owl:equivalentProperty <http://sigkdd#Name_of_conference> .
+
+<http://cmt#name> owl:equivalentProperty <http://sigkdd#Name> .
+
+<http://cmt#submitPaper> owl:equivalentProperty <http://sigkdd#submit> .
+

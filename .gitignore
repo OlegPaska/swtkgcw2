@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+
+# Files over GitHub's 100 MB file size limit.
+data/oaei/OAEI-INM713-IN3067/bio-ml/ontologies/fma.body.owl
+data/oaei/OAEI-INM713-IN3067/knowledge-graph/ontologies/marvel.owl
+data/oaei/OAEI-INM713-IN3067/knowledge-graph/ontologies/marvelcinematicuniverse.owl
+data/oaei/OAEI-INM713-IN3067/knowledge-graph/ontologies/memoryalpha.owl
+data/oaei/OAEI-INM713-IN3067/knowledge-graph/ontologies/memorybeta.owl
+data/oaei/OAEI-INM713-IN3067/knowledge-graph/ontologies/starwars.owl

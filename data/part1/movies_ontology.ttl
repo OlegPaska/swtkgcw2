@@ -1,0 +1,381 @@
+@prefix : <http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/> .
+@prefix opp: <http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http:/www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/> .
+
+<http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/> rdf:type owl:Ontology ;
+                                                        <http://purl.org/dc/elements/1.1/creator> "Oleg Paska"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/BornIn
+:BornIn rdf:type owl:ObjectProperty ;
+        rdfs:subPropertyOf :FromLocation .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/BornInCity
+:BornInCity rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :BornIn ;
+            rdfs:domain :Person ;
+            rdfs:range :City .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/BornInCountry
+:BornInCountry rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :BornIn ;
+               rdfs:domain :Person ;
+               rdfs:range :Country .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Directs
+:Directs rdf:type owl:ObjectProperty ;
+         owl:inverseOf :HasDirector ;
+         rdfs:domain :Director ;
+         rdfs:range :Movie .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/FilmedAt
+:FilmedAt rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :FromLocation .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/FilmedAtCity
+:FilmedAtCity rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :FilmedAt ;
+              rdfs:domain :Movie ;
+              rdfs:range :City .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/FilmedAtCountry
+:FilmedAtCountry rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :FilmedAt ;
+                 rdfs:domain :Movie ;
+                 rdfs:range :Country .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/FromLocation
+:FromLocation rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasActor
+:HasActor rdf:type owl:ObjectProperty ;
+          owl:inverseOf :StarsIn ;
+          rdfs:domain :Movie ;
+          rdfs:range :Actor .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasAttribute
+:HasAttribute rdf:type owl:ObjectProperty .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasCertificate
+:HasCertificate rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :HasAttribute ;
+                rdfs:domain :Movie ;
+                rdfs:range :Certificate .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasDirector
+:HasDirector rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Movie ;
+             rdfs:range :Director .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/HasGenre
+:HasGenre rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :HasAttribute ;
+          rdfs:domain :Movie ;
+          rdfs:range :Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/StarsIn
+:StarsIn rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Actor ;
+         rdfs:range :Movie .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/IMDB_Rating
+:IMDB_Rating rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Movie ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:decimal ;
+                          owl:withRestrictions ( [ xsd:minInclusive 0
+                                                 ]
+                                                 [ xsd:maxInclusive 10
+                                                 ]
+                                               )
+                        ] .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/firstName
+:firstName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :name .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/gross
+:gross rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:integer ;
+       rdfs:label "gross revenue" .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/lastName
+:lastName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf :name .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/metaScore
+:metaScore rdf:type owl:DatatypeProperty ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:onDatatype xsd:integer ;
+                        owl:withRestrictions ( [ xsd:minInclusive 0
+                                               ]
+                                               [ xsd:maxInclusive 100
+                                               ]
+                                             )
+                      ] ;
+           rdfs:label "community Metacritic score" .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Person ;
+      rdfs:range xsd:string .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/releaseYear
+:releaseYear rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:int .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/runtime
+:runtime rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:integer ;
+         rdfs:label "runtime in minutes" .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/volumeSold
+:volumeSold rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:integer ;
+            rdfs:label "total global sales" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Action_Movie
+:Action_Movie rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty :HasGenre ;
+                                                           owl:someValuesFrom :Action
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Movie ,
+                              :Movie_By_Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Adult_Audiences
+:Adult_Audiences rdf:type owl:Class ;
+                 rdfs:subClassOf :Certificate .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Adventure
+:Adventure rdf:type owl:Class ;
+           rdfs:subClassOf :Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Adventure_Movie
+:Adventure_Movie rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :HasGenre ;
+                                                              owl:someValuesFrom :Adventure
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Movie ,
+                                 :Movie_By_Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/All_Audiences
+:All_Audiences rdf:type owl:Class ;
+               rdfs:subClassOf :Certificate .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Attributes
+:Attributes rdf:type owl:Class .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Certificate
+:Certificate rdf:type owl:Class ;
+             rdfs:subClassOf :Attributes .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Location .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Classic_Movie
+:Classic_Movie rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :releaseYear ;
+                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                 owl:onDatatype xsd:integer ;
+                                                                                 owl:withRestrictions ( [ xsd:maxExclusive 1990
+                                                                                                        ]
+                                                                                                      )
+                                                                               ]
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :Movie .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Location .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Crime
+:Crime rdf:type owl:Class ;
+       rdfs:subClassOf :Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Crime_Movie
+:Crime_Movie rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :HasGenre ;
+                                                          owl:someValuesFrom :Crime
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Movie ,
+                             :Movie_By_Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Drama
+:Drama rdf:type owl:Class ;
+       rdfs:subClassOf :Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Drama_Movie
+:Drama_Movie rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :HasGenre ;
+                                                          owl:someValuesFrom :Drama
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Movie ,
+                             :Movie_By_Genre .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Family_Movie
+:Family_Movie rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                         [ rdf:type owl:Class ;
+                                                           owl:complementOf [ rdf:type owl:Restriction ;
+                                                                              owl:onProperty :HasCertificate ;
+                                                                              owl:someValuesFrom :Adult_Audiences
+                                                                            ]
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:subClassOf :Movie .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Genre
+:Genre rdf:type owl:Class ;
+       rdfs:subClassOf :Attributes .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Highly_Rated_Movie
+:Highly_Rated_Movie rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( :Movie
+                                                               [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty :IMDB_Rating ;
+                                                                 owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                      owl:onDatatype xsd:double ;
+                                                                                      owl:withRestrictions ( [ xsd:minExclusive "7.0"^^xsd:double
+                                                                                                             ]
+                                                                                                           )
+                                                                                    ]
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf :Movie .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Location
+:Location rdf:type owl:Class .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Movie
+:Movie rdf:type owl:Class .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Movie_By_Genre
+:Movie_By_Genre rdf:type owl:Class ;
+                rdfs:subClassOf :Movie .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/PG-13
+:PG-13 rdf:type owl:Class ;
+       rdfs:subClassOf :Certificate .
+
+
+###  http://www.city.ac.uk/inm713-in3067/2026/Oleg_Paska/Person
+:Person rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

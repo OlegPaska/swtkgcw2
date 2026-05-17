@@ -1,0 +1,22 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://confOf#Author> owl:equivalentClass <http://iasted#Author> .
+
+<http://confOf#Camera_Ready_event> owl:equivalentClass <http://iasted#Camera_ready_manuscript_deadline> .
+
+<http://confOf#City> owl:equivalentClass <http://iasted#City> .
+
+<http://confOf#Conference> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://confOf#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://confOf#Registration_of_participants_event> owl:equivalentClass <http://iasted#Registration_fee> .
+
+<http://confOf#Student> owl:equivalentClass <http://iasted#Student_lecturer> .
+
+<http://confOf#Submission_event> owl:equivalentClass <http://iasted#Submission> .
+
+<http://confOf#Trip> owl:equivalentClass <http://iasted#Trip_day> .
+
+<http://confOf#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+

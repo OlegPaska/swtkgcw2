@@ -1,0 +1,44 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<http://conference#Camera_ready_contribution> owl:equivalentClass <http://iasted#Camera_ready_manuscript_deadline> .
+
+<http://conference#Conference> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Conference_announcement> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Conference_applicant> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Conference_contribution> owl:equivalentClass <http://iasted#Conference_activity> .
+
+<http://conference#Conference_contributor> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Conference_document> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Conference_fees> owl:equivalentClass <http://iasted#Conference_state> .
+
+<http://conference#Conference_part> owl:equivalentClass <http://iasted#Conference_airport> .
+
+<http://conference#Conference_participant> owl:equivalentClass <http://iasted#Conference_activity> .
+
+<http://conference#Conference_proceedings> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Conference_volume> owl:equivalentClass <http://iasted#Conference_hotel> .
+
+<http://conference#Conference_www> owl:equivalentClass <http://iasted#Conference_city> .
+
+<http://conference#Person> owl:equivalentClass <http://iasted#Person> .
+
+<http://conference#Presentation> owl:equivalentClass <http://iasted#Presentation> .
+
+<http://conference#Review> owl:equivalentClass <http://iasted#Review> .
+
+<http://conference#Review_expertise> owl:equivalentClass <http://iasted#Review> .
+
+<http://conference#Review_preference> owl:equivalentClass <http://iasted#Review> .
+
+<http://conference#Reviewer> owl:equivalentClass <http://iasted#Reviewer> .
+
+<http://conference#Tutorial> owl:equivalentClass <http://iasted#Tutorial> .
+
+<http://conference#is_given_by> owl:equivalentProperty <http://iasted#is_given_by> .
+

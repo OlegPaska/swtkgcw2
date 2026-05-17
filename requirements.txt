@@ -1,0 +1,6 @@
+﻿rdflib==7.1.3
+OWLready2==0.45
+python-Levenshtein==0.26.1
+owlrl==7.1.3
+pandas==2.2.3
+

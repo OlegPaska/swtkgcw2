@@ -1,0 +1,183 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<http://qudt.org/schema/qudt/Unit> owl:equivalentClass <http://ontology.dumontierlab.com/Unit> .
+
+<http://qudt.org/schema/qudt/hasUnit> owl:equivalentProperty <http://ontology.dumontierlab.com/hasUnit> .
+
+<http://qudt.org/vocab/unit/CentiM> owl:sameAs <http://matonto.org/ontologies/matonto#unit_centimeter> .
+
+<http://qudt.org/vocab/unit/GM> owl:sameAs <http://ontology.dumontierlab.com/unit_gram> .
+
+<http://qudt.org/vocab/unit/GM-PER-L> owl:sameAs <http://matonto.org/ontologies/matonto#unit_gram_1_milliliter_-1> .
+
+<http://qudt.org/vocab/unit/GM-PER-M3> owl:sameAs <http://matonto.org/ontologies/matonto#unit_gram_1_centimeter_-3> .
+
+<http://qudt.org/vocab/unit/KiloGM> owl:sameAs <http://ontology.dumontierlab.com/unit_kilogram> .
+
+<http://qudt.org/vocab/unit/KiloGM-PER-M2> owl:sameAs <http://ontology.dumontierlab.com/unit_kilogram_1_meter_2_second_-3> .
+
+<http://qudt.org/vocab/unit/KiloGM-PER-M3> owl:sameAs <http://ontology.dumontierlab.com/unit_kilogram_1_meter_-3> .
+
+<http://qudt.org/vocab/unit/M> owl:sameAs <http://ontology.dumontierlab.com/unit_meter> .
+
+<http://qudt.org/vocab/unit/M2> owl:sameAs <http://ontology.dumontierlab.com/unit_meter_2> .
+
+<http://qudt.org/vocab/unit/M3> owl:sameAs <http://ontology.dumontierlab.com/unit_meter_3> .
+
+<http://qudt.org/vocab/unit/MilliL> owl:sameAs <http://matonto.org/ontologies/matonto#unit_milliliter> .
+
+<http://qudt.org/vocab/unit/OHM> owl:sameAs <http://ontology.dumontierlab.com/unit_ohm> .
+
+<http://qudt.org/vocab/unit/SEC> owl:sameAs <http://ontology.dumontierlab.com/unit_second> .
+
+<http://w3id.org/CEON/ontology/actor/ProcessParticipation> owl:equivalentClass <http://www.ifomis.org/bfo/1.0/span#Process> .
+
+<http://w3id.org/CEON/ontology/actor/hasOrganisationName> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasName> .
+
+<http://w3id.org/CEON/ontology/actorODP/Role> owl:equivalentClass <http://www.ifomis.org/bfo/1.0/snap#Role> .
+
+<http://w3id.org/CEON/ontology/energy/Energy> owl:equivalentClass <http://ontology.dumontierlab.com/Energy> .
+
+<http://w3id.org/CEON/ontology/energy/EnergyComposition> owl:equivalentClass <http://ontology.dumontierlab.com/Energy> .
+
+<http://w3id.org/CEON/ontology/energy/EnergyConversion> owl:equivalentClass <http://ontology.dumontierlab.com/Energy> .
+
+<http://w3id.org/CEON/ontology/energy/EnergyInfrastructure> owl:equivalentClass <http://ontology.dumontierlab.com/EnergyUnit> .
+
+<http://w3id.org/CEON/ontology/energy/EnergySource> owl:equivalentClass <http://ontology.dumontierlab.com/Energy> .
+
+<http://w3id.org/CEON/ontology/location/hasGlobalLocationNumber> owl:equivalentProperty <http://ontology.dumontierlab.com/hasAtomicNumber> .
+
+<http://w3id.org/CEON/ontology/location/hasLocation> owl:equivalentProperty <http://ontology.dumontierlab.com/isLocationOf> .
+
+<http://w3id.org/CEON/ontology/material/Boron> owl:equivalentClass <http://ontology.dumontierlab.com/Boron> .
+
+<http://w3id.org/CEON/ontology/material/Cerium> owl:equivalentClass <http://ontology.dumontierlab.com/Cerium> .
+
+<http://w3id.org/CEON/ontology/material/ChemicalElement> owl:equivalentClass <http://ontology.dumontierlab.com/ChemicalAgent> .
+
+<http://w3id.org/CEON/ontology/material/ChemicalEntity> owl:equivalentClass <http://ontology.dumontierlab.com/ChemicalAgent> .
+
+<http://w3id.org/CEON/ontology/material/ChemicalSubstance> owl:equivalentClass <http://ontology.dumontierlab.com/ChemicalSubstance> .
+
+<http://w3id.org/CEON/ontology/material/Chromium> owl:equivalentClass <http://ontology.dumontierlab.com/Chromium> .
+
+<http://w3id.org/CEON/ontology/material/Copper> owl:equivalentClass <http://ontology.dumontierlab.com/Copper> .
+
+<http://w3id.org/CEON/ontology/material/Dysprosium> owl:equivalentClass <http://ontology.dumontierlab.com/Dysprosium> .
+
+<http://w3id.org/CEON/ontology/material/Erbium> owl:equivalentClass <http://ontology.dumontierlab.com/Erbium> .
+
+<http://w3id.org/CEON/ontology/material/Europium> owl:equivalentClass <http://ontology.dumontierlab.com/Europium> .
+
+<http://w3id.org/CEON/ontology/material/Gadolinium> owl:equivalentClass <http://ontology.dumontierlab.com/Gadolinium> .
+
+<http://w3id.org/CEON/ontology/material/Holmium> owl:equivalentClass <http://ontology.dumontierlab.com/Holmium> .
+
+<http://w3id.org/CEON/ontology/material/Iron> owl:equivalentClass <http://ontology.dumontierlab.com/Iron> .
+
+<http://w3id.org/CEON/ontology/material/Lanthanum> owl:equivalentClass <http://ontology.dumontierlab.com/Lanthanum> .
+
+<http://w3id.org/CEON/ontology/material/Lutetium> owl:equivalentClass <http://ontology.dumontierlab.com/Lutetium> .
+
+<http://w3id.org/CEON/ontology/material/Magnesium> owl:equivalentClass <http://ontology.dumontierlab.com/Magnesium> .
+
+<http://w3id.org/CEON/ontology/material/Manganese> owl:equivalentClass <http://ontology.dumontierlab.com/Manganese> .
+
+<http://w3id.org/CEON/ontology/material/Material> owl:equivalentClass <http://matonto.org/ontologies/matonto#Material> .
+
+<http://w3id.org/CEON/ontology/material/MaterialComponent> owl:equivalentClass <http://matonto.org/ontologies/matonto#Material> .
+
+<http://w3id.org/CEON/ontology/material/MolecularEntity> owl:equivalentClass <http://ontology.dumontierlab.com/MolecularCenter> .
+
+<http://w3id.org/CEON/ontology/material/Neodymium> owl:equivalentClass <http://ontology.dumontierlab.com/Neodymium> .
+
+<http://w3id.org/CEON/ontology/material/Nickel> owl:equivalentClass <http://ontology.dumontierlab.com/Nickel> .
+
+<http://w3id.org/CEON/ontology/material/Niobium> owl:equivalentClass <http://ontology.dumontierlab.com/Niobium> .
+
+<http://w3id.org/CEON/ontology/material/Praseodymium> owl:equivalentClass <http://ontology.dumontierlab.com/Praseodymium> .
+
+<http://w3id.org/CEON/ontology/material/Promethium> owl:equivalentClass <http://ontology.dumontierlab.com/Promethium> .
+
+<http://w3id.org/CEON/ontology/material/Samarium> owl:equivalentClass <http://ontology.dumontierlab.com/Samarium> .
+
+<http://w3id.org/CEON/ontology/material/Scandium> owl:equivalentClass <http://ontology.dumontierlab.com/Scandium> .
+
+<http://w3id.org/CEON/ontology/material/Silicon> owl:equivalentClass <http://ontology.dumontierlab.com/Silicon> .
+
+<http://w3id.org/CEON/ontology/material/Tantalum> owl:equivalentClass <http://ontology.dumontierlab.com/Tantalum> .
+
+<http://w3id.org/CEON/ontology/material/Terbium> owl:equivalentClass <http://ontology.dumontierlab.com/Terbium> .
+
+<http://w3id.org/CEON/ontology/material/Thulium> owl:equivalentClass <http://ontology.dumontierlab.com/Thulium> .
+
+<http://w3id.org/CEON/ontology/material/Titanium> owl:equivalentClass <http://ontology.dumontierlab.com/Titanium> .
+
+<http://w3id.org/CEON/ontology/material/Ytterbium> owl:equivalentClass <http://ontology.dumontierlab.com/Ytterbium> .
+
+<http://w3id.org/CEON/ontology/material/Yttrium> owl:equivalentClass <http://ontology.dumontierlab.com/Yttrium> .
+
+<http://w3id.org/CEON/ontology/material/Zinc> owl:equivalentClass <http://ontology.dumontierlab.com/Zinc> .
+
+<http://w3id.org/CEON/ontology/material/hasChemicalEntity> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasChemicalSymbol> .
+
+<http://w3id.org/CEON/ontology/material/hasMaterialComponent> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasComponentProperty> .
+
+<http://w3id.org/CEON/ontology/process/Catalyst> owl:equivalentClass <http://ontology.dumontierlab.com/Catalyst> .
+
+<http://w3id.org/CEON/ontology/processODP/Process> owl:equivalentClass <http://www.ifomis.org/bfo/1.0/span#Process> .
+
+<http://w3id.org/CEON/ontology/processODP/TimeInterval> owl:equivalentClass <http://ontology.dumontierlab.com/TimeUnit> .
+
+<http://w3id.org/CEON/ontology/processODP/Transition> owl:equivalentClass <http://ontology.dumontierlab.com/TransitionMetal> .
+
+<http://w3id.org/CEON/ontology/processODP/endTime> owl:equivalentProperty <http://ontology.dumontierlab.com/ends> .
+
+<http://w3id.org/CEON/ontology/processODP/hasPart> owl:equivalentProperty <http://ontology.dumontierlab.com/hasPart> .
+
+<http://w3id.org/CEON/ontology/processODP/precedesExecution> owl:equivalentProperty <http://ontology.dumontierlab.com/precedes> .
+
+<http://w3id.org/CEON/ontology/product/Product> owl:equivalentClass <http://ontology.dumontierlab.com/Product> .
+
+<http://w3id.org/CEON/ontology/product/ProductComposition> owl:equivalentClass <http://ontology.dumontierlab.com/Product> .
+
+<http://w3id.org/CEON/ontology/product/Solution> owl:equivalentClass <http://ontology.dumontierlab.com/Solution> .
+
+<http://w3id.org/CEON/ontology/product/hasGlobalTradeItemNumber> owl:equivalentProperty <http://ontology.dumontierlab.com/hasAtomicNumber> .
+
+<http://w3id.org/CEON/ontology/product/hasProductComponent> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasComponentProperty> .
+
+<http://w3id.org/CEON/ontology/product/hasProductName> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasName> .
+
+<http://w3id.org/CEON/ontology/product/hasProductObjectComponent> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasComponentProperty> .
+
+<http://w3id.org/CEON/ontology/quantity/hasMarketValue> owl:equivalentProperty <http://ontology.dumontierlab.com/hasValue> .
+
+<http://w3id.org/CEON/ontology/resourceODP/Information> owl:equivalentClass <http://ontology.dumontierlab.com/Information> .
+
+<http://w3id.org/CEON/ontology/resourceODP/containsInformation> owl:equivalentProperty <http://ontology.dumontierlab.com/contains> .
+
+<http://w3id.org/CEON/ontology/resourceODP/hasPart> owl:equivalentProperty <http://ontology.dumontierlab.com/hasPart> .
+
+<http://w3id.org/CEON/ontology/resourceODP/hasResourceProperty> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasComponentProperty> .
+
+<http://w3id.org/CEON/ontology/resourceODP/hasResourceQuality> owl:equivalentProperty <http://ontology.dumontierlab.com/hasQuality> .
+
+<http://w3id.org/CEON/ontology/statement/hasMassFractionForDemounting> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasMass> .
+
+<http://w3id.org/CEON/ontology/statement/hasMassFractionForDisassembly> owl:equivalentProperty <http://matonto.org/ontologies/matonto#hasMass> .
+
+<http://w3id.org/CEON/ontology/value/hasAimedValue> owl:equivalentProperty <http://ontology.dumontierlab.com/hasValue> .
+
+<http://w3id.org/CEON/ontology/value/hasAssociatedValue> owl:equivalentProperty <http://ontology.dumontierlab.com/hasValue> .
+
+<http://w3id.org/CEON/ontology/value/hasVPTargets> owl:equivalentProperty <http://ontology.dumontierlab.com/hasValue> .
+
+<http://w3id.org/CEON/ontology/value/hasValueParticipantRole> owl:equivalentProperty <http://ontology.dumontierlab.com/hasParticipant> .
+
+prov:Entity owl:equivalentClass <http://www.ifomis.org/bfo/1.0#Entity> .
+
+prov:Role owl:equivalentClass <http://www.ifomis.org/bfo/1.0/snap#Role> .
+
